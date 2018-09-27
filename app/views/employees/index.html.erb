@@ -1,0 +1,6 @@
+<h1>YO. SOME EMPLOYEES.</h1>
+<ul class="employees-container">
+  <% @employees.each do |employee| %>
+  <li><%= link_to employee.full_name, employee_path(employee) %></li>
+  <% end %>
+</ul>
